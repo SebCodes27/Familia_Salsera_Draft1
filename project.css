@@ -110,13 +110,24 @@ iframe {
 
 .perks {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
 }
+/* set up an alternate for if the screen is full, to fit all three first perks in one row*/
 
 .perk {
-    width: 45%;
-    margin: 0 10px
+    width: 100%;
+    max-width: 325px;
+    object-fit: cover;
+}
+
+.wide-perk {
+    width: 95%;
+    height: auto;
 }
 
 button, img {
