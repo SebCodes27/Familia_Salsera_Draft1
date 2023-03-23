@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background:#008080;
+    display: flex;
+    justify-content: space-around; /*or space-between, or left*/;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 1em;
+    text-align:center;
+}
+
+nav {
+    width:75%;
+    max-width:900px;
+}
+
+nav > ul {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-inline-start: 0;
+    margin-block:0;
+
+}
+
+nav > ul > li {
+    color: white;
+    display: block;
+    margin:0 0.2rem;
+    padding: 0.2rem;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+    color: #ADADAD;
+}
+
+main {
+    padding-top: 50px
+}
+
+div:not(.video, .perks) {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 800px
+}
+
+h2 {
+    padding-top: 90px;/*change once header is changed*/
+    text-align: left;
+}
+
+#home {
+    text-align: center;
+    font-size: 2.2em;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    background-color:beige;
+    transition: all 0.5s
+    
+}
+
+button > a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    transition: color 0.2s
+}
+
+button > a:hover {
+    color: darkred;
+}
+
+button:hover {
+    background-color: /*set this*/
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    justify-content: center;
+}
+
+.perks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.perk {
+    width: 45%;
+    margin: 0 10px
+}
+
+button, img {
+    border-radius: 5px;
+}
