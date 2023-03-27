@@ -126,8 +126,19 @@ iframe {
 }
 
 .wide-perk {
-    width: 95%;
+    width: 100%;
     height: auto;
+    padding-bottom: 8px;
+}
+
+.vid-perks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 0 auto;
 }
 
 .locations {
