@@ -37,14 +37,14 @@ nav > ul {
 
 }
 
-nav > ul > li {
+nav > ul > li, h1 > a{
     color: white;
     display: block;
     margin:0 0.2rem;
     padding: 0.2rem;
 }
 
-li > a {
+li > a, h1 > a {
     color: inherit;
     text-decoration: none;
 }
