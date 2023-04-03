@@ -57,7 +57,7 @@ main {
     padding-top: 50px
 }
 
-div:not(.video, .perks, .locations) {
+div:not(.perks, .locations) {
     width: 80%;
     margin: 0 auto 10px auto;
     max-width: 800px
