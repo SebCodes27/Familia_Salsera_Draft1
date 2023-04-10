@@ -57,10 +57,14 @@ main {
     padding-top: 50px
 }
 
-div:not(.perks, .locations) {
+.frame {
     width: 80%;
     margin: 0 auto 10px auto;
-    max-width: 800px
+    max-width: 1100px
+}
+
+.content {
+    display:flex;
 }
 
 h2 {
@@ -103,21 +107,39 @@ img {
     width: 100%;
 }
 
-iframe {
-    width: 100%;
-    justify-content: center;
+.opening-img {
+    display: block;
+    max-width: 800px;
+    margin: auto;
 }
 
-.perks {
+iframe {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     gap: 16px;
+    padding: 25px 0;
     margin: 0 auto;
+    width: 100%;
+}
+
+.flex-item {
+    display: flex;
 }
 /* set up an alternate for if the screen is full, to fit all three first perks in one row*/
+
+.sixty-percent {
+    width: 60%;
+}
 
 .perk {
     width: 100%;
@@ -132,13 +154,15 @@ iframe {
 }
 
 .vid-perks {
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    gap: 16px;
     margin: 0 auto;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .locations {
@@ -166,4 +190,44 @@ iframe {
 
 button, img {
     border-radius: 5px;
+}
+
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 16px;
+    padding: 25px 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text {
+    width: 50%;
+    text-align: center;
+}
+
+.media {
+    display:block;
+    margin: auto;
+    width: 50%;
+    max-width: 325px;
+    object-fit: cover;
+    justify-content: center;
 }
