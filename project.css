@@ -13,6 +13,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1
 }
 
 iframe {
@@ -80,13 +81,23 @@ h2 {
     font-size: 2.2em;
 }
 
-button {
+.button1 {
     display: flex;
     align-items: center;
     margin: 10px auto;
     padding: 20px 40px;
     font-size: 1.5em;
     background-color:beige;
+    transition: all 0.5s;
+}
+
+.button2 {
+    display: block;
+    align-items: left;
+    margin: 10px 0;
+    padding: 20px 40px;
+    font-size: 1em;
+    background-color:;
     transition: all 0.5s;
 }
 
@@ -142,10 +153,6 @@ button, img {
     border-radius: 5px;
 }
 
-
-
-
-
 /* Customer Perks section */
 
 .box {
@@ -157,6 +164,10 @@ button, img {
     padding: 25px 0;
     margin: 0 auto;
     width: 100%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .vid-box {
@@ -173,14 +184,26 @@ button, img {
 .text {
     text-align: center;
     object-fit: cover;
-    font-size: 2.5em;
+    font-size: 3.6em;
     padding: 0 20px;
+    color: rgb(255, 0, 0);
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media only screen and (max-width: 955px) {
+    .text {
+        font-size: 2.2em;
+    }
 }
 
 .text-box {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: beige;
     flex: 1 1 0;
-}
+    border-radius: 5px;
+    }
 
 .media {
     display:block;
@@ -207,7 +230,7 @@ button, img {
 /* End of customer perks section */
 
 .videoWrapper {
-    position: relative;
+    position:relative ;
     padding-bottom: 56.25%;
     /* 16:9 */
     padding-top: 25px;
@@ -215,7 +238,7 @@ button, img {
   }
   
   .videoWrapper iframe {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
