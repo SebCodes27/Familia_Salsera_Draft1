@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: white;
@@ -13,7 +17,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 1
+    z-index: 1;
 }
 
 iframe {
@@ -61,10 +65,6 @@ nav > ul > li > a:hover {
     color: #ADADAD;
 }
 
-main {
-    padding-top: 50px
-}
-
 .frame {
     width: 80%;
     margin: 0 auto 10px auto;
@@ -78,7 +78,7 @@ h2 {
 
 #home {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 3.2em;
 }
 
 .button1 {
@@ -93,11 +93,10 @@ h2 {
 
 .button2 {
     display: block;
-    align-items: left;
     margin: 10px 0;
-    padding: 20px 40px;
+    padding: 20px 8px;
     font-size: 1em;
-    background-color:;
+    background-color:beige;
     transition: all 0.5s;
 }
 
@@ -141,12 +140,14 @@ img {
     width: 42%;
     height:auto;
     object-fit: cover;
+    flex: 1 1 0;
 }
 
 .location2 {
     width: 55%;
     height: auto;
     object-fit: cover;
+    flex: 1 1 0;
 }
 
 button, img {
@@ -161,7 +162,7 @@ button, img {
     justify-content: space-evenly;
     align-items: top;
     gap: 16px;
-    padding: 25px 0;
+    padding: 20px 0;
     margin: 0 auto;
     width: 100%;
 }
@@ -176,7 +177,7 @@ button, img {
     justify-content: space-evenly;
     align-items: top;
     gap: 16px;
-    padding: 25px 0;
+    padding: 20px 0;
     margin: 0 auto;
     width: 100%;
 }
@@ -244,3 +245,9 @@ button, img {
     width: 100%;
     height: 100%;
   }
+
+.s-border {
+    border-style: solid;
+    border-color: silver;
+    border-width: 5px;
+}
