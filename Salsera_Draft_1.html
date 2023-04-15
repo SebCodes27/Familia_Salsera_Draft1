@@ -5,11 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="project.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
     <body>
         <header>
             <h1><a class="title" href="#home">Familia Salsera</a></h1>
-            <nav>
+            <nav class="myNav" id="myTopNav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#our-guarantee">Our Guarantee</a></li>
@@ -19,7 +20,22 @@
                     <li><a href="#about-us">About Us</a></li>
                 </ul>
             </nav>
+            <a href="javascript:void(0);" class="icon thin-nav" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </header>
+        <div class="second-nav" id="mySecondNav">
+        <div class="hidden-nav">
+            <a href="#home">Home</a>
+            <a href="#our-guarantee">Our Guarantee</a>
+            <a href="#6wk-program">6WK Program</a>
+            <a href="#customer-perks">Customer Perks</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#about-us">About Us</a>
+        </div>
+        <div class="seven-five-percent"></div>
+        <div></div>
+        </div>
         <main>
             <div class="frame">
             <h2 id="home">Familia Salsera</h2>
@@ -111,4 +127,14 @@
     </body>
     <footer>
     </footer>
+    <script>
+        function myFunction() {
+            let x = document.getElementById("mySecondNav");
+            if (x.className === "second-nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "second-nav";
+            }
+        }
+    </script>
 </html>
