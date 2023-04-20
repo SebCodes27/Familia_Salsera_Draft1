@@ -64,7 +64,7 @@ mail($to,$email_subject,$email_body,$headers);
 //redirect to the 'thank you' page
 //Thank you! This is the first of many perks you'll receive.
 
-header('Location: /');
+header('Location: thank_you.html');
 
 } else {
     echo $errors;
