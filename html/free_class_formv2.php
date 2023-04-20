@@ -17,7 +17,7 @@ $phone = $_POST['phone'];
 
 if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", 
-$email_address))
+$email))
 {
     $errors .= "\n Error: Invalid email address";
 }
@@ -34,8 +34,6 @@ if (!preg_match(
     $errors .= "\n Error: Invalid last name";
 }
 
-$number_exp = "/^[0-9|(|)|-]+$/";
-
 if (!preg_match(
 "/^[0-9|(|)|-]+$/", $phone))
 {
@@ -44,7 +42,7 @@ if (!preg_match(
 
 if (strlen($email) < 2)
 {
-    $errors .= "\n Error: Invalid email address";
+    $errors .= "\n Error: Email address is too short";
 }
 
 if( empty($errors))
