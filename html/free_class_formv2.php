@@ -72,7 +72,6 @@ header('Location: index.html');
 
 {
     echo $errors;
-    die();
 }
 
 ?>
