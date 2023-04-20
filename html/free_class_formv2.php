@@ -11,7 +11,7 @@ if(empty($_POST['first'])  ||
 }
 
 $first = $_POST['first']; 
-$last = $_POST('last');
+$last = $_POST['last'];
 $email = $_POST['email']; 
 $phone = $_POST['phone']; 
 
