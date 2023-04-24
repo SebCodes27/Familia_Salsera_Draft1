@@ -283,7 +283,7 @@ iframe {
     position: relative;
     display:block;
     margin: auto;
-    width: 75%;
+    /* commenting out width: 75%; */
     max-width: 650px;
     min-width: 250px;
     object-fit: cover;
