@@ -189,7 +189,8 @@ iframe {
     display: block;
     margin: auto;
     justify-content: center;
-    width: 100%;
+    width: auto;
+    /* width: 100% */
 }
 
 .videoWrapper {
