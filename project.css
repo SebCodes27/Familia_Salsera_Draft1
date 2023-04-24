@@ -240,7 +240,7 @@ iframe {
     align-items: top;
     gap: 16px;
     padding: 20px 0;
-    margin: 0 auto;
+    /* commented out margin: 0 auto; */
     width: 100%;
 }
 
