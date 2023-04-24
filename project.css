@@ -8,6 +8,8 @@ body {
     margin: 0;
 }
 
+/* Header Section */
+
 header {
     width: 100%;
     padding: 15px 10px;
@@ -20,21 +22,10 @@ header {
     z-index: 2;
 }
 
-iframe {
-    display: block;
-    margin: auto;
-    justify-content: center;
-    width: 100%;
-}
-
 h1 {
     color: white;
     font-size: 1em;
     text-align:center;
-}
-
-.second-nav {
-    display: none;
 }
 
 nav {
@@ -70,6 +61,10 @@ nav > ul > li > a:hover {
 }
 
 .icon {
+    display: none;
+}
+
+.second-nav {
     display: none;
 }
 
@@ -127,6 +122,10 @@ nav > ul > li > a:hover {
 
 }
 
+/* End of Header Section */
+
+/* Home Section */
+
 .frame {
     width: 80%;
     margin: 0 auto 10px auto;
@@ -134,13 +133,8 @@ nav > ul > li > a:hover {
 }
 
 h2 {
-    padding-top: 90px;/*change once header is changed*/
+    padding-top: 90px;
     text-align: left;
-}
-
-h3 {
-    text-align: center;
-    font-size: 2em;
 }
 
 #home {
@@ -154,15 +148,6 @@ h3 {
     margin: 10px auto;
     padding: 20px 40px;
     font-size: 1.5em;
-    background-color:beige;
-    transition: all 0.5s;
-}
-
-.button2 {
-    display: block;
-    margin: 10px 0;
-    padding: 20px 8px;
-    font-size: 1em;
     background-color:beige;
     transition: all 0.5s;
 }
@@ -192,34 +177,44 @@ img {
     margin: auto;
 }
 
-.locations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items:top;
-    gap: 16px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.location1 {
-    width: 42%;
-    height:auto;
-    object-fit: cover;
-    flex: 1 1 0;
-}
-
-.location2 {
-    width: 55%;
-    height: auto;
-    object-fit: cover;
-    flex: 1 1 0;
-}
-
 button, img {
     border-radius: 5px;
 }
+
+/* End of Home Section */
+
+/* Our Guarantee Section */
+
+iframe {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.videoWrapper {
+    position:relative ;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  
+.videoWrapper iframe {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.s-border {
+    border-style: solid;
+    border-color: silver;
+    border-width: 5px;
+}
+
+/* End of Our Guarantee Section */
 
 /* Customer Perks section */
 
@@ -285,6 +280,7 @@ button, img {
 }
 
 .wide-media {
+    position: relative;
     display:block;
     margin: auto;
     width: 75%;
@@ -297,24 +293,53 @@ button, img {
 
 /* End of customer perks section */
 
-.videoWrapper {
-    position:relative ;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-  }
-  
-  .videoWrapper iframe {
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+/* About Us section */
 
-.s-border {
-    border-style: solid;
-    border-color: silver;
-    border-width: 5px;
+.locations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:top;
+    gap: 16px;
+    margin: 0 auto;
+    width: 100%;
 }
+
+.location1 {
+    width: 42%;
+    height:auto;
+    object-fit: cover;
+    flex: 1 1 0;
+}
+
+.location2 {
+    width: 55%;
+    height: auto;
+    object-fit: cover;
+    flex: 1 1 0;
+}
+
+/* End of About Us section */
+
+/* Footer Section */
+
+.button2 {
+    display: block;
+    margin: 10px 0;
+    padding: 20px 8px;
+    font-size: 1em;
+    background-color:beige;
+    transition: all 0.5s;
+}
+
+/* End of Footer Section */
+
+/* Thank You Form section */
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/* End of Thank You Form section */
