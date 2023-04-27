@@ -152,6 +152,12 @@ h2 {
     transition: all 0.5s;
 }
 
+@media screen and (min-width: 480px) {
+    .button1 {
+        font-size: 2em;
+    }
+}
+
 button > a {
     text-decoration: none;
     color: red;
@@ -346,6 +352,15 @@ iframe {
     flex: 1 1 0;
 }
 
+.contact-info {
+    padding-top: 20px;
+}
+
+.contact {
+    font-size: 1.1em;
+    color: rgb(238, 237, 237)
+}
+
 /* End of About Us section */
 
 /* Footer Section */
@@ -357,6 +372,12 @@ iframe {
     font-size: 1em;
     background-color:beige;
     transition: all 0.5s;
+}
+
+@media screen and (min-width: 480px) {
+    .button2 {
+        font-size: 1.35em;
+    }
 }
 
 /* End of Footer Section */
