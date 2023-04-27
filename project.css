@@ -256,7 +256,7 @@ iframe {
     object-fit: cover;
     font-size: 3.6em;
     padding: 0 20px;
-    color: rgb(255, 0, 0);
+    color: black;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -270,7 +270,7 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: beige;
+    background-color: white;
     flex: 1 1 0;
     border-radius: 5px;
     }
