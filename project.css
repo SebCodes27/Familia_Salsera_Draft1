@@ -216,9 +216,7 @@ iframe {
   }
 
 .s-border {
-    border-style: solid;
-    border-color: silver;
-    border-width: 5px;
+    border: solid silver 5px;
 }
 
 /* End of Our Guarantee Section */
@@ -370,8 +368,21 @@ iframe {
     margin: 10px 0;
     padding: 20px 8px;
     font-size: 1em;
-    background-color:beige;
+    background-color:black;
+    color: white;
     transition: all 0.5s;
+}
+
+.button2 > a {
+    color: white;
+}
+
+.button2 > a:hover {
+    color: inherit;
+}
+
+.thin-border {
+    border: solid silver 2px;
 }
 
 @media screen and (min-width: 480px) {
