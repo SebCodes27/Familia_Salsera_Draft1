@@ -152,6 +152,14 @@ h2 {
     transition: all 0.5s;
 }
 
+.top-padding {
+    padding-top: 50px;
+}
+
+.tall-padding {
+    padding: 40px;
+}
+
 @media screen and (min-width: 480px) {
     .button1 {
         font-size: 2em;
@@ -357,6 +365,22 @@ iframe {
 .contact {
     font-size: 1.1em;
     color: rgb(238, 237, 237)
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.undecorate {
+    text-decoration:none;
+}
+
+.link-color:hover {
+    color: rgb(188, 230, 248);
+}
+
+p {
+    line-height: 2;
 }
 
 /* End of About Us section */
