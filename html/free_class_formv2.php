@@ -1,7 +1,7 @@
 <?php
 $errors = '';
 $from = 'admin@familiasalsera.org';//<-----Put Your email address here.
-$to = 'sebastiangarcia.work02@gmail.com';
+$to = 'cgelite1@gmail.com';
 if(empty($_POST['first'])  || 
    empty($_POST['last'])  || 
    empty($_POST['email']) || 
