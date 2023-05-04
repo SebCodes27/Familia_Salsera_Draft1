@@ -1,30 +1,30 @@
-* {
-    scroll-behavior: smooth;
+html {
+    scroll-behavior:smooth;
 }
 
 body {
-    background-color: black;
-    color: white;
-    margin: 0;
+    background-color:black;
+    color:white;
+    margin:0;
 }
 
 /* Header Section */
 
 header {
-    width: 100%;
-    padding: 15px 10px;
+    width:100%;
+    padding:15px 10px;
     background:#008080;
-    display: flex;
-    justify-content: space-around; /*or space-between, or left*/;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    z-index: 2;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    position:fixed;
+    top:0;
+    z-index:2;
 }
 
 h1 {
-    color: white;
-    font-size: 1em;
+    color:white;
+    font-size:1em;
     text-align:center;
 }
 
@@ -35,89 +35,88 @@ nav {
 
 nav > ul {
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100%;
-    padding-inline-start: 0;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    height:100%;
+    padding-inline-start:0;
     margin-block:0;
-
 }
 
 nav > ul > li, h1 > a{
-    color: white;
-    display: block;
+    color:white;
+    display:block;
     margin:0 0.2rem;
-    padding: 0.2rem;
+    padding:0.2rem;
 }
 
 li > a, h1 > a {
-    color: inherit;
-    text-decoration: none;
+    color:inherit;
+    text-decoration:none;
 }
 
 nav > ul > li > a:hover {
-    color: #ADADAD;
+    color:#ADADAD;
 }
 
 .icon {
-    display: none;
+    display:none;
 }
 
 .second-nav {
-    display: none;
+    display:none;
 }
 
 @media screen and (max-width: 650px) {
     header {
-        align-items: top;
-        padding: 8px 10px;
+        align-items:top;
+        padding:8px 10px;
     }
     
     h1 {
-        display: block;
-        width: 75%;
-        font-size: 1.5em;
-        min-width: 200px;
+        display:block;
+        width:75%;
+        font-size:1.5em;
+        min-width:200px;
     }
     
     .myNav li:not(.thin-nav) {
-        display: none;
+        display:none;
     }
     .thin-nav {
-        display: block;
-        text-align: right;
+        display:block;
+        text-align:end;
     }
     .icon {
-        float: right;
-        display: block;
-        padding-right: 20px;
-        color: inherit;
+        float:inline-end;
+        display:block;
+        padding-right:20px;
+        color:inherit;
     }
 }
 
 @media screen and (max-width: 650px) {
     .second-nav.responsive {
-        background-color: gray;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        z-index: 1;
+        background-color:gray;
+        width:100%;
+        display:flex;
+        position:fixed;
+        z-index:1;
     }
     
     .hidden-nav {
-        padding-top: 60px;
-        height: 200px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        padding-top:60px;
+        height:200px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
     }
     
     .hidden-nav a {
-        display: flex;
-        color: white;
-        width: 75%;
-        text-decoration: none;
+        display:flex;
+        color:white;
+        width:75%;
+        text-decoration:none;
     }
 
 }
@@ -127,72 +126,68 @@ nav > ul > li > a:hover {
 /* Home Section */
 
 .frame {
-    width: 80%;
-    margin: 0 auto 10px auto;
-    max-width: 1100px
+    width:80%;
+    margin:0 auto 10px auto;
+    max-width:1100px
 }
 
 h2 {
-    padding-top: 90px;
-    text-align: left;
+    padding-top:90px;
+    text-align:start;
 }
 
 #home {
-    text-align: center;
-    font-size: 3.2em;
+    text-align:center;
+    font-size:3.2em;
 }
 
 .button1 {
-    display: flex;
-    align-items: center;
-    margin: 10px auto;
-    padding: 20px 40px;
-    font-size: 1.5em;
+    display:flex;
+    align-items:center;
+    margin:10px auto;
+    padding:20px 40px;
+    font-size:1.5em;
     background-color:beige;
-    transition: all 0.5s;
+    transition:all 0.5s;
 }
 
 .top-padding {
-    padding-top: 50px;
+    padding-top:50px;
 }
 
 .tall-padding {
-    padding: 40px;
+    padding:40px;
 }
 
 @media screen and (min-width: 480px) {
     .button1 {
-        font-size: 2em;
+        font-size:2em;
     }
 }
 
 button > a {
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
-    transition: color 0.2s
+    text-decoration:none;
+    color:red;
+    font-weight:bold;
+    transition:color 0.2s
 }
 
 button > a:hover {
-    color: darkred;
-}
-
-button:hover {
-    background-color: ;/*set this*/
+    color:darkred;
 }
 
 img {
-    width: 100%;
+    width:100%;
 }
 
 .opening-img {
-    display: block;
-    max-width: 800px;
-    margin: auto;
+    display:block;
+    max-width:800px;
+    margin:auto;
 }
 
 button, img {
-    border-radius: 5px;
+    border-radius:5px;
 }
 
 /* End of Home Section */
@@ -200,31 +195,29 @@ button, img {
 /* Our Guarantee Section */
 
 iframe {
-    display: block;
-    margin: auto;
-    justify-content: center;
-    width: 100%;
-    /* width: 100% */
+    display:block;
+    margin:auto;
+    justify-content:center;
+    width:100%;
 }
 
 .videoWrapper {
     position:relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
   }
   
 .videoWrapper iframe {
     position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top:0;
+    inset-block-start:0;
+    width:100%;
+    height:100%;
   }
 
 .s-border {
-    border: solid silver 5px;
+    border:solid silver 5px;
 }
 
 /* End of Our Guarantee Section */
@@ -232,100 +225,98 @@ iframe {
 /* Customer Perks section */
 
 .box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: top;
-    gap: 16px;
-    padding: 20px 0;
-    margin: 0 auto;
-    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:top;
+    gap:16px;
+    padding:20px 0;
+    margin:0 auto;
+    width:100%;
 }
 
 .reverse {
-    flex-direction: row-reverse;
+    flex-direction:row-reverse;
 }
 
 .vid-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: top;
-    gap: 16px;
-    padding: 20px 0;
-    /* commented out margin: 0 auto; */
-    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    align-items:top;
+    gap:16px;
+    padding:20px 0;
+    width:100%;
 }
 
 .text {
-    text-align: center;
-    object-fit: cover;
-    font-size: 3.6em;
-    padding: 0 20px;
-    color: white;
+    text-align:center;
+    object-fit:cover;
+    font-size:3.6em;
+    padding:0 20px;
+    color:white;
     font-family:'Times New Roman', Times, serif;
 }
 
 @media only screen and (max-width: 955px) {
     .text {
-        font-size: 2.2em;
+        font-size:2.2em;
     }
 }
 
 .text-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: black;
-    flex: 1 1 0;
-    border-radius: 5px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    background-color:black;
+    flex:1 1 0;
+    border-radius:5px;
     }
 
 .media {
     display:block;
-    margin: auto;
-    width: 50%;
-    max-width: 325px;
-    min-width: 250px;
-    object-fit: cover;
-    justify-content: center;
-    flex: 1 1 0;
+    margin:auto;
+    width:50%;
+    max-width:325px;
+    min-width:250px;
+    object-fit:cover;
+    justify-content:center;
+    flex:1 1 0;
 }
 
 .wide-media {
-    position: relative;
+    position:relative;
     display:block;
-    margin: auto;
-    /* commenting out width: 75%; */
-    max-width: 650px;
-    min-width: 250px;
-    object-fit: cover;
-    justify-content: center;
-    flex: 3 1 0;
+    margin:auto;
+    max-width:650px;
+    min-width:250px;
+    object-fit:cover;
+    justify-content:center;
+    flex:3 1 0;
 }
 
 @media screen and (max-width: 480px) {
 
 .videoDiv {
-    display: flex;
-    flex: 3 1 0;
+    display:flex;
+    flex:3 1 0;
 }
 
 .vidContainer {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
+    flex:1;
+    overflow:hidden;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
 }
 
 .vidContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position:absolute;
+    top:0;
+    inset-block-start:0;
+    width:100%;
+    height:100%;
 }
 }
 
@@ -334,41 +325,41 @@ iframe {
 /* About Us section */
 
 .locations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
     justify-content:center;
     align-items:top;
-    gap: 16px;
-    margin: 0 auto;
-    width: 100%;
+    gap:16px;
+    margin:0 auto;
+    width:100%;
 }
 
 .location1 {
-    width: 42%;
+    width:42%;
     height:auto;
-    object-fit: cover;
-    flex: 1 1 0;
+    object-fit:cover;
+    flex:1 1 0;
 }
 
 .location2 {
-    width: 55%;
-    height: auto;
-    object-fit: cover;
-    flex: 1 1 0;
+    width:55%;
+    height:auto;
+    object-fit:cover;
+    flex:1 1 0;
 }
 
 .contact-info {
-    padding-top: 20px;
+    padding-top:20px;
 }
 
 .contact {
-    font-size: 1.1em;
-    color: rgb(238, 237, 237)
+    font-size:1.1em;
+    color:rgb(238, 237, 237)
 }
 
 .bold {
-    font-weight: bold;
+    font-weight:bold;
 }
 
 .undecorate {
@@ -376,11 +367,11 @@ iframe {
 }
 
 .link-color:hover {
-    color: rgb(188, 230, 248);
+    color:rgb(188, 230, 248);
 }
 
 p {
-    line-height: 2;
+    line-height:2;
 }
 
 /* End of About Us section */
@@ -388,30 +379,30 @@ p {
 /* Footer Section */
 
 .button2 {
-    display: block;
-    margin: 10px 0;
-    padding: 20px 8px;
-    font-size: 1em;
+    display:block;
+    margin:10px 0;
+    padding:20px 8px;
+    font-size:1em;
     background-color:black;
-    color: white;
-    transition: all 0.5s;
+    color:white;
+    transition:all 0.5s;
 }
 
 .button2 > a {
-    color: white;
+    color:white;
 }
 
 .button2 > a:hover {
-    color: inherit;
+    color:inherit;
 }
 
 .thin-border {
-    border: solid silver 2px;
+    border:solid silver 2px;
 }
 
 @media screen and (min-width: 480px) {
     .button2 {
-        font-size: 1.35em;
+        font-size:1.35em;
     }
 }
 
@@ -420,8 +411,8 @@ p {
 /* Thank You Form section */
 
 h3 {
-    text-align: center;
-    font-size: 2em;
+    text-align:center;
+    font-size:2em;
 }
 
 /* End of Thank You Form section */
