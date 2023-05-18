@@ -8,6 +8,10 @@ body {
     margin:0;
 }
 
+main {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Header Section */
 
 header {
@@ -188,6 +192,11 @@ img {
 
 button, img {
     border-radius:5px;
+}
+
+.green-light:hover {
+    color: rgb(27, 255, 27);
+    transition: .5s;
 }
 
 /* End of Home Section */
