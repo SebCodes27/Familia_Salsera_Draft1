@@ -195,16 +195,16 @@ button, img {
 }
 
 .large-text {
-    font-size: 1.8em;
+    font-size:1.8em;
 }
 
 .regular-text {
-    font-size: 1em;
+    font-size:1em;
 }
 
 .green-light:hover {
-    color: rgb(27, 255, 27);
-    transition: .5s;
+    color:rgb(27, 255, 27);
+    transition:.5s;
 }
 
 /* End of Home Section */
