@@ -151,8 +151,9 @@ h2 {
     margin:10px auto;
     padding:20px 40px;
     font-size:1.5em;
-    background-color:beige;
+    background-color:#0069ff;
     transition:all 0.5s;
+    border-width: 0;
 }
 
 .top-padding {
@@ -171,13 +172,9 @@ h2 {
 
 button > a {
     text-decoration:none;
-    color:red;
+    color:white;
     font-weight:bold;
     transition:color 0.2s
-}
-
-button > a:hover {
-    color:darkred;
 }
 
 img {
@@ -188,6 +185,7 @@ img {
     display:block;
     max-width:800px;
     margin:auto;
+    margin-top: -60px;
 }
 
 button, img {
@@ -195,7 +193,11 @@ button, img {
 }
 
 .large-text {
-    font-size:1.8em;
+    font-size:1.5em;
+}
+
+.mid-text {
+    font-size: 0.8em;
 }
 
 .regular-text {
@@ -205,6 +207,14 @@ button, img {
 .green-light:hover {
     color:rgb(27, 255, 27);
     transition:.5s;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    padding-left: 24px;
 }
 
 /* End of Home Section */
