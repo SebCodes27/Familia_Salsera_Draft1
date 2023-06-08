@@ -6,6 +6,7 @@ body {
     background-color:black;
     color:white;
     margin:0;
+    padding-bottom: 25px;
 }
 
 main {
@@ -156,18 +157,18 @@ h2 {
     border-width: 0;
 }
 
+@media screen and (min-width: 480px) {
+    .button1 {
+        font-size:2em;
+    }
+}
+
 .top-padding {
     padding-top:50px;
 }
 
 .tall-padding {
     padding:40px;
-}
-
-@media screen and (min-width: 480px) {
-    .button1 {
-        font-size:2em;
-    }
 }
 
 button > a {
@@ -409,6 +410,7 @@ p {
 
 /* Footer Section */
 
+/* commenting out button2 css 
 .button2 {
     display:block;
     margin:10px 0;
