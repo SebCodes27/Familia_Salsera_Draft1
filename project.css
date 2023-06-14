@@ -449,3 +449,27 @@ h3 {
 }
 
 /* End of Thank You Form section */
+
+/* Testimonials Section */
+
+.side-by-side {
+    padding: 20px;
+}
+
+.thirtyPerc {
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.seventyPerc {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fiftyPerc {
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
