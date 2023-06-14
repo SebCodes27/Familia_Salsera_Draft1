@@ -136,7 +136,7 @@ nav > ul > li > a:hover {
     max-width:1100px
 }
 
-h2 {
+h2:not(.six-week-program) {
     padding-top:90px;
     text-align:start;
 }
@@ -184,9 +184,8 @@ img {
 
 .opening-img {
     display:block;
-    max-width:800px;
+    width: 100%;
     margin:auto;
-    margin-top: -60px;
 }
 
 button, img {
@@ -208,6 +207,14 @@ button, img {
 .green-light:hover {
     color:rgb(27, 255, 27);
     transition:.5s;
+}
+
+.rich-green-light {
+    color:rgb(3, 255, 3)
+}
+
+.rich-blue-light {
+    color: rgb(28, 145, 255);
 }
 
 .center {
@@ -482,8 +489,21 @@ h3 {
     border: solid #1B8E2D 5px;
 }
 
-.center {
+.media-center {
     margin: auto;
     display: block;
     width: 90%;
+}
+
+.verThirtyPerc {
+    height: 33.3%;
+}
+
+.top-text {
+    vertical-align:top;
+}
+
+.side-padding {
+    padding-left: 20px;
+    padding-right: 20px;
 }
