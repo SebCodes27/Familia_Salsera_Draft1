@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../project.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../index.js"></script>
     </head>
     <body>
         <header>
@@ -36,11 +37,11 @@
         <div></div>
         </div>
         <main>
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/cgelite1/30min?hide_gdpr_banner=1', text: 'Schedule Your First Class', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
             <div class="frame">
-            <h2 id="home">Customer Perks</h2>
+                <h2 id="home">Customer Perks</h2>
+                <div class="popupCalendar" id="myPopup">
+                    <iframe src="../images/loading.png" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="msgsndr-calendar"></iframe><br><script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
+                </div>
             </div>
             <div class="frame">
                     <div class="s-border box">
@@ -77,11 +78,7 @@
                     </div>
             </div>
             <div class="frame top-padding">
-                <button class="button1 tall-padding" type="button">
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cgelite1/30min?hide_gdpr_banner=1'});return false;">Click Here For a Free Class!</a>
-                </button>
+                <button class="button1 tall-padding" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
             </div>
             <div class="frame">
                 <h2 id="about-us">About Us</h2>
@@ -105,15 +102,6 @@
         </main>
     </body>
     <footer>
+        <button class="button3" type="button" onclick="calWidget()">Schedule Your First Class</button>
     </footer>
-    <script>
-        function myFunction() {
-            let x = document.getElementById("mySecondNav");
-            if (x.className === "second-nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "second-nav";
-            }
-        }
-    </script>
 </html>

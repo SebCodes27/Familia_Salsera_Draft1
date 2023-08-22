@@ -24,6 +24,7 @@
             "url": "familiasalsera.org"
         }
         </script>
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -53,18 +54,13 @@
         <div></div>
         </div>
         <main>
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/cgelite1/30min?hide_gdpr_banner=1', text: 'Schedule Your First Class', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
             <div class="frame">
-            <h2 id="home">Familia Salsera</h2>
-            </div>
+                <h2 id="home">Familia Salsera</h2>
+                <div class="popupCalendar show" id="myPopup">
+                    <iframe src="./images/loading.png" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="msgsndr-calendar"></iframe><br><script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
+                </div>
             <div class="frame">
-                <button class="button1" type="button">
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cgelite1/30min?hide_gdpr_banner=1'});return false;">Click Here For a Free Class!</a>
-                </button>
+                <button class="button1" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
             </div>
             <div id="six-week-program" class="frame large-text top-padding2">
                 <div class="fiftyPerc">
@@ -92,11 +88,7 @@
                 <p>🚨If that sounds like you, click below now, and reserve your <span class="rich-blue-light">FREE CLASS</span> below🚨</p>
             </div>
             <div class="frame">
-                <button class="button1 tall-padding" type="button">
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cgelite1/30min?hide_gdpr_banner=1'});return false;">Click Here For a Free Class!</a>
-                </button>
+                <button class="button1 tall-padding" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
             </div>
             <div class="frame large-text">
                 <p>P.S. During times of stress, our stress hormone (cortisol) increases and our immune system suffers. Dance is a great form of Exercise, that's also what we're in this for.</p>
@@ -126,11 +118,7 @@
                 </div>
             </div>
             <div class="frame top-padding">
-                <button class="button1 tall-padding" type="button">
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cgelite1/30min?hide_gdpr_banner=1'});return false;">Click Here For a Free Class!</a>
-                </button>
+                <button class="button1 tall-padding" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
             </div>
             <div class="frame">
                 <h2 id="about-us">About Us</h2>
@@ -154,15 +142,9 @@
         </main>
     </body>
     <footer>
+        <button class="button3" type="button" onclick="calWidget()">Schedule Your First Class</button>
+        <div class="outer-exit show" id="exit-button">
+            <div class="inner-exit" type="button" onclick="exitWidget()"><i class="fa fa-times-circle-o"></i></div>
+        </div>
     </footer>
-    <script>
-        function myFunction() {
-            let x = document.getElementById("mySecondNav");
-            if (x.className === "second-nav") {
-                x.className += " responsive";
-            } else {
-                x.className = "second-nav";
-            }
-        }
-    </script>
 </html>
