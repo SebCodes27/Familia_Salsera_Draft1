@@ -240,13 +240,20 @@ nav > ul > li > a:hover {
     margin:0 auto 10px auto;
 }
 
+.frame-block {
+    width:85%;
+    display: block;
+    margin:0 auto 10px auto;
+}
+
 h2:not(.six-week-program) {
-    padding-top:90px;
+    padding-top:50px;
 }
 
 #home {
     text-align:center;
     font-size:3.2em;
+    padding-top: 90px;
 }
 
 .button1 {
@@ -317,6 +324,10 @@ button, img {
 
 .mid-text {
     font-size: 0.8em;
+}
+
+.medium-text {
+    font-size: 1.1em;
 }
 
 .regular-text {
@@ -404,8 +415,6 @@ iframe {
     object-fit:cover;
     font-size:3.6em;
     padding:0 20px;
-    color:white;
-    font-family:'Times New Roman', Times, serif;
 }
 
 @media only screen and (max-width: 720px) {
@@ -536,13 +545,11 @@ h3 {
 }
 
 .fiftyPerc {
-    width: 49%;
+    width: 43%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     display: inline-block;
-    vertical-align:text-top;
-}
-
-.vert-cent {
-    vertical-align: middle;
+    vertical-align:middle;
 }
 
 h3 {
@@ -616,3 +623,40 @@ h3 {
     }
 }
 
+.divider {
+    width: 82%;
+    display: block;
+    margin: auto;
+    background-color:rgb(135, 135, 135);
+    height: 2px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+#factoid {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: rgb(198, 222, 255);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#factoid > p {
+    color: rgb(39, 165, 7);
+}
+
+.black-box {
+    border: solid 2px black;
+    border-style: dashed;
+}
+
+.gold-box {
+    border: solid 2px gold;
+}
+
+#class-sch {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
