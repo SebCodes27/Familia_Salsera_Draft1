@@ -236,13 +236,12 @@ nav > ul > li > a:hover {
 /* Home Section */
 
 .frame {
-    width:80%;
+    width:85%;
     margin:0 auto 10px auto;
 }
 
 h2:not(.six-week-program) {
     padding-top:90px;
-    text-align:start;
 }
 
 #home {
@@ -254,13 +253,16 @@ h2:not(.six-week-program) {
     display:flex;
     align-items:center;
     margin:10px auto;
-    padding:20px 40px;
-    font-size:1.5em;
-    color: rgb(69, 69, 69);
-    background-color: inherit; /*0069ff*/
+    padding:5px 40px;
+    font-size:1em;
+    color: red;
+    background-color: rgb(231, 226, 226); /*0069ff*/
     transition:all 0.5s;
     border-width: 0;
     cursor: pointer;
+    font-weight: normal;
+    font-family: cursive;
+    border: solid gray 2px;
 }
 
 @media screen and (min-width: 480px) {
@@ -534,8 +536,12 @@ h3 {
 }
 
 .fiftyPerc {
-    width: 45%;
+    width: 49%;
     display: inline-block;
+    vertical-align:text-top;
+}
+
+.vert-cent {
     vertical-align: middle;
 }
 
