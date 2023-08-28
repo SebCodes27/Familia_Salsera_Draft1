@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color:#b1dbdd;
+    background-color:rgb(241, 239, 239);
     color:black;
     margin:0;
     padding-bottom: 25px;
@@ -18,7 +18,7 @@ main {
 header {
     width:100%;
     padding:15px 10px;
-    background:#43bbc1;
+    background:black;
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -178,7 +178,7 @@ nav > ul > li > a:hover {
     width: 240px;
     height: 45px;
     border-radius: 20px;
-    background-color: #0069ff;
+    background-color: black;
     position: fixed;
     right: 18px;
     bottom: 22px;
@@ -256,7 +256,8 @@ h2:not(.six-week-program) {
     margin:10px auto;
     padding:20px 40px;
     font-size:1.5em;
-    background-color:#0069ff;
+    color: rgb(69, 69, 69);
+    background-color: inherit; /*0069ff*/
     transition:all 0.5s;
     border-width: 0;
     cursor: pointer;
@@ -496,40 +497,12 @@ iframe {
 
 p {
     line-height:2;
+    color: #5c5353;
 }
 
 /* End of About Us section */
 
-/* Footer Section */
-
-/* commenting out button2 css 
-.button2 {
-    display:block;
-    margin:10px 0;
-    padding:20px 8px;
-    font-size:1em;
-    background-color:black;
-    color:white;
-    transition:all 0.5s;
-}
-
-.button2 > a {
-    color:white;
-}
-
-.button2 > a:hover {
-    color:inherit;
-}
-
-.thin-border {
-    border:solid silver 2px;
-}
-
-@media screen and (min-width: 480px) {
-    .button2 {
-        font-size:1.35em;
-    }
-}
+/* Footer Section */ 
 
 /* End of Footer Section */
 
