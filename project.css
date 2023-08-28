@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    background-color:black;
-    color:white;
+    background-color:#b1dbdd;
+    color:black;
     margin:0;
     padding-bottom: 25px;
 }
@@ -18,7 +18,7 @@ main {
 header {
     width:100%;
     padding:15px 10px;
-    background:#008080;
+    background:#43bbc1;
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -145,6 +145,12 @@ nav > ul > li > a:hover {
 
 }
 
+@media screen and (max-width: 420px) {
+    .hidden-nav {
+        padding-top: 100px;
+    }
+}
+
 /* End of Header Section */
 
 /* Popup Calendar Section */
@@ -232,7 +238,6 @@ nav > ul > li > a:hover {
 .frame {
     width:80%;
     margin:0 auto 10px auto;
-    max-width:1100px
 }
 
 h2:not(.six-week-program) {
@@ -478,7 +483,7 @@ iframe {
 
 .contact {
     font-size:1.1em;
-    color:rgb(238, 237, 237)
+    color: black;
 }
 
 .bold {
@@ -487,10 +492,6 @@ iframe {
 
 .undecorate {
     text-decoration:none;
-}
-
-.link-color:hover {
-    color:rgb(188, 230, 248);
 }
 
 p {
