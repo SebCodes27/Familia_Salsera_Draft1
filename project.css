@@ -121,7 +121,7 @@ nav > ul > li > a:hover {
 
 @media screen and (max-width: 700px) {
     .second-nav.responsive {
-        background-color:gray;
+        background-color:rgb(255, 255, 255);
         width:100%;
         display:flex;
         position:fixed;
@@ -138,7 +138,7 @@ nav > ul > li > a:hover {
     
     .hidden-nav a {
         display:flex;
-        color:white;
+        color:rgb(255, 37, 37);
         width:75%;
         text-decoration:none;
     }
@@ -156,7 +156,7 @@ nav > ul > li > a:hover {
 /* Popup Calendar Section */
 
 .popupCalendar {
-    background-color: #4680fd;
+    background-color: #5d5d5d;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -261,7 +261,7 @@ h2:not(.six-week-program) {
     align-items:center;
     margin:10px auto;
     padding:5px 40px;
-    font-size:1em;
+    font-size:1.8em;
     color: red;
     background-color: rgb(231, 226, 226); /*0069ff*/
     transition:all 0.5s;
@@ -587,9 +587,15 @@ h3 {
     color: rgb(254, 238, 142);
 }
 
+#class-sch {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
 @media screen and (max-width: 1050px) {
     .fiftyPerc {
-        width: 100%;
+        width: 95%;
         display: block;
     }
 
@@ -621,6 +627,7 @@ h3 {
         padding-left: 0;
         padding-right: 20px;
     }
+
 }
 
 .divider {
@@ -634,9 +641,9 @@ h3 {
 }
 
 #factoid {
-    width: 100%;
+    width: 90%;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 5%;
     background-color: rgb(198, 222, 255);
     margin-top: 25px;
     margin-bottom: 25px;
@@ -655,8 +662,12 @@ h3 {
     border: solid 2px gold;
 }
 
-#class-sch {
-    width: 50%;
-    display: block;
-    margin: auto;
+.fa-bars {
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+    #class-sch {
+        width: 85%;
+    }
 }
