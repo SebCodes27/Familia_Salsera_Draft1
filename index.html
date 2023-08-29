@@ -55,12 +55,11 @@
         </div>
         <main>
             <div class="frame-block">
-                <h2 id="home">Familia Salsera 💃</h2>
                 <div class="popupCalendar show" id="myPopup">
-                    <iframe src="./images/loading.png" style="border:none;" scrolling="no" id="msgsndr-calendar"></iframe><br><script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
+                    <iframe src="" style="border:none;" scrolling="no" id="msgsndr-calendar"></iframe><br><script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
                 </div>
                 <div class="calFade show" id="calFade"></div>
-                <div class="side-padding">
+                <div id="intro-vid" class="side-padding">
                     <div class="ex-video videoWrapper">
                         <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/nBsP0ieoaOY?showinfo=0&modestbranding=1&autoplay=1&mute=1&loop=1" alt="dancing with a partner demonstration" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -71,6 +70,7 @@
             </div>
             <div class="divider"></div>
             <div id="six-week-program" class="frame-block medium-text top-padding2">
+                <h2 id="home1" class="no-pad">Familia Salsera 💃</h2>
                 <div class="fiftyPerc">
                     <h2 class="large-text six-week-program">Become a Salsera Today!</h2>
                     <p>We're looking for 20 people that are serious about learning to Dance Salsa at last!</p>
@@ -82,8 +82,8 @@
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="frame-block">
-                <h2 id="the-perks" class="center">The Perks</h2>
+            <div class="frame-block medium-text">
+                <h2 id="the-perks" class="center large-text">The Perks</h2>
                 <div class="fiftyPerc">
                     <p>✅ 2 HIGH-ENERGY Salsa lessons per week</p>
                     <p>✅ Access to an exclusive Salsa portal: tips, tricks, and lesson reviews</p>
@@ -165,7 +165,7 @@
     <footer>
         <button class="button3" type="button" onclick="calWidget()">Schedule Your First Class</button>
         <div class="outer-exit show" id="exit-button">
-            <div class="inner-exit" type="button" onclick="exitWidget()"><i class="fa fa-times-circle-o"></i></div>
+            <div class="inner-exit" type="button" onclick="calWidget()"><i class="fa fa-times-circle-o"></i></div>
         </div>
     </footer>
 </html>

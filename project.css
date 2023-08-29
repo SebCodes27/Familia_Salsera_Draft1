@@ -153,11 +153,10 @@ nav > ul > li > a:hover {
 
 /* End of Header Section */
 
-/* Popup Calendar Section */
+/* Popup Calendar and Schedule Section */
 
 .popupCalendar {
-    background-color: #5d5d5d;
-    color: #fff;
+    background-color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 0;
@@ -213,6 +212,44 @@ nav > ul > li > a:hover {
     height: 100%;
   }
 
+  .popupSchedule {
+    position: fixed;
+    height: 95%;
+    width: auto;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 2.5%;
+    bottom: 2.5%;
+    z-index: 4;
+  }
+
+  .outer-exit2 {
+    position: fixed;
+    right: 4%;
+    top: 4%;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  .inner-exit2 {
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    color: rgb(238, 236, 236);
+  }
+
+  .schedFade {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0%;
+    background-color: gray;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+  }
+
   @media screen and (max-width: 750px) {
 
     .popupCalendar {
@@ -230,10 +267,13 @@ nav > ul > li > a:hover {
 
   }
 
-  
 /* End of Popup Calendar Section */
 
 /* Home Section */
+
+#intro-vid {
+    padding-top: 100px;
+}
 
 .frame {
     width:85%;
@@ -246,7 +286,7 @@ nav > ul > li > a:hover {
     margin:0 auto 10px auto;
 }
 
-h2:not(.six-week-program) {
+h2:not(.six-week-program, .no-pad) {
     padding-top:50px;
 }
 
@@ -254,6 +294,12 @@ h2:not(.six-week-program) {
     text-align:center;
     font-size:3.2em;
     padding-top: 90px;
+}
+
+#home1 {
+    text-align: center;
+    font-size: 3.2em;
+    padding-bottom: 40px;
 }
 
 .button1 {
@@ -447,17 +493,23 @@ iframe {
     position:relative;
     display:block;
     margin:auto;
-    max-width:650px;
     min-width:250px;
     object-fit:cover;
     justify-content:center;
     flex:3 1 0;
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
 
 .tm-vid {
     padding-top: 40px;
+}
+}
+
+.tm-block {
+    display: block;
+    margin: auto;
+    padding-left: 5px;
 }
 
 /* End of customer perks section */
@@ -530,6 +582,12 @@ h3 {
 
 .side-by-side {
     padding: 20px;
+    margin: 10px;
+}
+
+.tw-pad {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .thirtyPerc {
@@ -627,7 +685,10 @@ h3 {
         padding-left: 0;
         padding-right: 20px;
     }
-
+    .tw-pad {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .divider {
@@ -638,6 +699,16 @@ h3 {
     height: 2px;
     margin-top: 40px;
     margin-bottom: -20px;
+}
+
+.divider2 {
+    width: 94%;
+    display: block;
+    margin: auto;
+    background-color:rgb(135, 135, 135);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #factoid {

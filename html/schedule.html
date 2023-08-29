@@ -42,10 +42,15 @@
                 <div class="popupCalendar show" id="myPopup">
                     <iframe src="../images/loading.png" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="msgsndr-calendar"></iframe><br><script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
                 </div>
+                <img class="popupSchedule show" id="mySched" src="../images/schedule.jpeg">
                 <div class="calFade show" id="calFade"></div>
             </div>
             <div class="frame">
-                <img id="class-sch" src="../images/schedule.jpeg">
+                <a onclick="schedWidget()"><img id="class-sch" src="../images/schedule.jpeg"></a>
+                <div class="outer-exit2 show" id="exit-button2">
+                    <div class="inner-exit2" type="button" onclick="schedWidget()"><i class="fa fa-times-circle-o"></i></div>
+                </div>
+                <div class="schedFade show" id="schedFade"></div>
             </div>
             <div class="frame top-padding">
                 <button class="button1 tall-padding" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
@@ -74,7 +79,7 @@
     <footer>
         <button class="button3" type="button" onclick="calWidget()">Schedule Your First Class</button>
         <div class="outer-exit show" id="exit-button">
-            <div class="inner-exit" type="button" onclick="exitWidget()"><i class="fa fa-times-circle-o"></i></div>
+            <div class="inner-exit" type="button" onclick="calWidget()"><i class="fa fa-times-circle-o"></i></div>
         </div>
     </footer>
 </html>

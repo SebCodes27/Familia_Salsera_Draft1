@@ -22,3 +22,11 @@ function exitWidget() {
     calWidget();
 
 }
+function schedWidget() {
+    let schedPopup = document.getElementById('mySched');
+    schedPopup.classList.toggle('show');
+    let schedFade = document.getElementById('schedFade');
+    schedFade.classList.toggle('show');
+    let exitButton = document.getElementById('exit-button2');
+    exitButton.classList.toggle('show');
+}
