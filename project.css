@@ -512,6 +512,8 @@ iframe {
     padding-left: 5px;
 }
 
+
+
 /* End of customer perks section */
 
 /* About Us section */
@@ -683,11 +685,15 @@ h3 {
 
     .side-padding{ 
         padding-left: 0;
-        padding-right: 20px;
+        padding-right: 0;
     }
     .tw-pad {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    #intro-vid {
+        padding-top: 150px;
     }
 }
 
