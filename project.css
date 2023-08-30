@@ -143,11 +143,18 @@ nav > ul > li > a:hover {
         text-decoration:none;
     }
 
+    .ex-pad {
+        padding-top: 103px;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
     .hidden-nav {
         padding-top: 100px;
+    }
+    .ex-pad {
+        padding-top: 138px;
     }
 }
 
@@ -161,7 +168,7 @@ nav > ul > li > a:hover {
     border-radius: 6px;
     padding: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 10%;
     right: 10%;
     top: 14%;
@@ -188,22 +195,22 @@ nav > ul > li > a:hover {
 
   .outer-exit {
     position: fixed;
-    right: 11%;
+    right: 12%;
     top: 15%;
-    z-index: 2;
+    z-index: 5;
     cursor: pointer;
   }
 
   .inner-exit {
-    width: 20px;
+    width: 27px;
     height: 20px;
-    font-size: 1.2em;
+    font-size: 2em;
     color: rgb(238, 236, 236);
   }
 
   .calFade {
     position: fixed;
-    z-index: -1;
+    z-index: 3;
     top: 0;
     left: 0%;
     background-color: gray;
@@ -214,8 +221,9 @@ nav > ul > li > a:hover {
 
   .popupSchedule {
     position: fixed;
-    height: 95%;
+    max-height: 95%;
     width: auto;
+    max-width: 100%;
     margin: auto;
     left: 0;
     right: 0;
@@ -228,7 +236,7 @@ nav > ul > li > a:hover {
     position: fixed;
     right: 4%;
     top: 4%;
-    z-index: 4;
+    z-index: 5;
     cursor: pointer;
   }
 
@@ -257,7 +265,7 @@ nav > ul > li > a:hover {
         right: 5%;
         top: 5%;
         bottom: 5%;
-        z-index: 2;
+        z-index: 4;
     }
 
     .outer-exit {
@@ -307,7 +315,7 @@ h2:not(.six-week-program, .no-pad) {
     align-items:center;
     margin:10px auto;
     padding:5px 40px;
-    font-size:1.8em;
+    font-size:2.2em;
     color: red;
     background-color: rgb(231, 226, 226); /*0069ff*/
     transition:all 0.5s;
@@ -318,9 +326,9 @@ h2:not(.six-week-program, .no-pad) {
     border: solid gray 2px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .button1 {
-        font-size:2em;
+        font-size:2.5em;
     }
 }
 
