@@ -13,6 +13,139 @@ main {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Decoration Section */
+
+.frame {
+    width:85%;
+    margin:0 auto 10px auto;
+}
+
+.frame-block {
+    width:85%;
+    display: block;
+    margin:0 auto 10px auto;
+}
+
+h2:not(.six-week-program, .no-pad) {
+    padding-top:50px;
+}
+
+.top-padding {
+    padding-top:50px;
+}
+
+.top-padding2 {
+    padding-top: 70px;
+}
+
+.tall-padding {
+    padding:40px;
+}
+
+button {
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:color 0.2s
+}
+
+button > a {
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:color 0.2s
+}
+
+button, img {
+    border-radius:5px;
+}
+
+.large-text {
+    font-size:1.5em;
+}
+
+.medium-text {
+    font-size: 1.1em;
+}
+
+.regular-text {
+    font-size:1em;
+}
+
+.center {
+    text-align: center;
+}
+
+iframe {
+    display:block;
+    margin:auto;
+    justify-content:center;
+    width:100%;
+}
+
+.videoWrapper {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0;
+}
+  
+.videoWrapper iframe {
+    position:absolute;
+    top:0;
+    inset-block-start:0;
+    width:100%;
+    height:100%;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.undecorate {
+    text-decoration:none;
+}
+
+p {
+    line-height:2;
+    color: #5c5353;
+}
+
+h3 {
+    text-align:center;
+    font-size: 1.5em;
+}
+
+.gold {
+    color: rgb(254, 238, 142);
+}
+
+.divider {
+    width: 82%;
+    display: block;
+    margin: auto;
+    background-color:rgb(135, 135, 135);
+    height: 2px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+.divider2 {
+    width: 94%;
+    display: block;
+    margin: auto;
+    background-color:rgb(135, 135, 135);
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-bars {
+    color: white;
+}
+
+/* End of Decoration Section */
+
 /* Header Section */
 
 header {
@@ -33,13 +166,13 @@ h1 {
     text-align:center;
 }
 
+.title {
+    font-size: 1.6em;
+}
+
 nav {
     width:75%;
     max-width:900px;
-}
-
-.title {
-    font-size: 1.6em;
 }
 
 nav > ul {
@@ -78,84 +211,6 @@ nav > ul > li > a:hover {
 
 .second-nav {
     display:none;
-}
-
-@media screen and (max-width: 850px) {
-    
-    h1 {
-        font-size: .8em;
-    }
-
-    .myNav > ul > li > a {
-        font-size: .9em;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    header {
-        align-items:top;
-        padding:8px 10px;
-    }
-    
-    h1 {
-        display:block;
-        width:95%;
-        font-size:1.2em;
-        min-width:200px;
-    }
-    
-    .myNav li:not(.thin-nav) {
-        display:none;
-    }
-    .thin-nav {
-        display:block;
-        text-align:end;
-    }
-    .icon {
-        float:inline-end;
-        display:block;
-        padding-right:20px;
-        color:inherit;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .second-nav.responsive {
-        background-color:rgb(255, 255, 255);
-        width:100%;
-        display:flex;
-        position:fixed;
-        z-index:1;
-    }
-    
-    .hidden-nav {
-        padding-top:60px;
-        height:200px;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-    
-    .hidden-nav a {
-        display:flex;
-        color:rgb(255, 37, 37);
-        width:75%;
-        text-decoration:none;
-    }
-
-    .ex-pad {
-        padding-top: 103px;
-    }
-
-}
-
-@media screen and (max-width: 420px) {
-    .hidden-nav {
-        padding-top: 100px;
-    }
-    .ex-pad {
-        padding-top: 138px;
-    }
 }
 
 /* End of Header Section */
@@ -258,23 +313,6 @@ nav > ul > li > a:hover {
     height: 100%;
   }
 
-  @media screen and (max-width: 750px) {
-
-    .popupCalendar {
-        left: 5%;
-        right: 5%;
-        top: 5%;
-        bottom: 5%;
-        z-index: 4;
-    }
-
-    .outer-exit {
-        top: 6%;
-        right: 6%;
-    }
-
-  }
-
 /* End of Popup Calendar Section */
 
 /* Home Section */
@@ -283,20 +321,6 @@ nav > ul > li > a:hover {
     padding-top: 100px;
 }
 
-.frame {
-    width:85%;
-    margin:0 auto 10px auto;
-}
-
-.frame-block {
-    width:85%;
-    display: block;
-    margin:0 auto 10px auto;
-}
-
-h2:not(.six-week-program, .no-pad) {
-    padding-top:50px;
-}
 
 #home {
     text-align:center;
@@ -326,120 +350,35 @@ h2:not(.six-week-program, .no-pad) {
     border: solid gray 2px;
 }
 
-@media screen and (max-width: 480px) {
-    .button1 {
-        font-size:2.5em;
-    }
-}
-
-.top-padding {
-    padding-top:50px;
-}
-
-.top-padding2 {
-    padding-top: 70px;
-}
-
-.tall-padding {
-    padding:40px;
-}
-
-button {
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
-    transition:color 0.2s
-}
-
-button > a {
-    text-decoration:none;
-    color:white;
-    font-weight:bold;
-    transition:color 0.2s
-}
-
-img {
-    width:100%;
-}
-
 .opening-img {
     display:block;
     width: 100%;
     margin:auto;
 }
 
-button, img {
-    border-radius:5px;
-}
-
-.large-text {
-    font-size:1.5em;
-}
-
-.mid-text {
-    font-size: 0.8em;
-}
-
-.medium-text {
-    font-size: 1.1em;
-}
-
-.regular-text {
-    font-size:1em;
-}
-
-.green-light:hover {
-    color:rgb(27, 255, 27);
-    transition:.5s;
-}
-
-.rich-green-light {
-    color:rgb(3, 255, 3)
-}
-
-.rich-blue-light {
-    color: rgb(28, 145, 255);
-}
-
-.center {
+#factoid {
+    width: 90%;
     text-align: center;
+    padding: 10px 5%;
+    background-color: rgb(198, 222, 255);
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.indent {
-    padding-left: 24px;
+#factoid > p {
+    color: rgb(39, 165, 7);
+}
+
+.black-box {
+    border: solid 2px black;
+    border-style: dashed;
+}
+
+.gold-box {
+    border: solid 2px gold;
 }
 
 /* End of Home Section */
-
-/* Our Guarantee Section */
-
-iframe {
-    display:block;
-    margin:auto;
-    justify-content:center;
-    width:100%;
-}
-
-.videoWrapper {
-    position:relative;
-    padding-bottom:56.25%;
-    padding-top:25px;
-    height:0;
-  }
-  
-.videoWrapper iframe {
-    position:absolute;
-    top:0;
-    inset-block-start:0;
-    width:100%;
-    height:100%;
-  }
-
-.s-border {
-    border:solid silver 5px;
-}
-
-/* End of Our Guarantee Section */
 
 /* Customer Perks section */
 
@@ -471,12 +410,6 @@ iframe {
     padding:0 20px;
 }
 
-@media only screen and (max-width: 720px) {
-    .text {
-        font-size:2.2em;
-    }
-}
-
 .text-box {
     display:flex;
     flex-direction:column;
@@ -506,21 +439,6 @@ iframe {
     justify-content:center;
     flex:3 1 0;
 }
-
-@media screen and (max-width: 480px) {
-
-.tm-vid {
-    padding-top: 40px;
-}
-}
-
-.tm-block {
-    display: block;
-    margin: auto;
-    padding-left: 5px;
-}
-
-
 
 /* End of customer perks section */
 
@@ -560,33 +478,9 @@ iframe {
     color: black;
 }
 
-.bold {
-    font-weight:bold;
-}
-
-.undecorate {
-    text-decoration:none;
-}
-
-p {
-    line-height:2;
-    color: #5c5353;
-}
-
 /* End of About Us section */
 
-/* Footer Section */ 
-
-/* End of Footer Section */
-
-/* Thank You Form section */
-
-h3 {
-    text-align:center;
-    font-size:2em;
-}
-
-/* End of Thank You Form section */
+/* Footer Section */    /* End of Footer Section */
 
 /* Testimonials Section */
 
@@ -606,12 +500,6 @@ h3 {
     vertical-align: middle;
 }
 
-.seventyPerc {
-    width: 65%;
-    display: inline-block;
-    vertical-align: middle;
-}
-
 .fiftyPerc {
     width: 43%;
     padding-left: 2.5%;
@@ -620,16 +508,10 @@ h3 {
     vertical-align:middle;
 }
 
-h3 {
-    font-size: 1.5em;
-}
-
-.gold-border {
-    border: solid gold 5px;
-}
-
-.rgreen-border {
-    border: solid #1B8E2D 5px;
+.seventyPerc {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .media-center {
@@ -638,28 +520,149 @@ h3 {
     width: 90%;
 }
 
-.verThirtyPerc {
-    height: 33.3%;
-}
-
-.top-text {
-    vertical-align:top;
-}
-
-.side-padding {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.gold {
-    color: rgb(254, 238, 142);
-}
+/* Schedule Section */
 
 #class-sch {
     width: 50%;
     display: block;
     margin: auto;
 }
+
+/* End of Schedule Section */
+
+
+
+/* SCREEN CHANGES */
+
+
+
+/* Header Screen Changes */
+
+@media screen and (max-width: 850px) {
+    
+    h1 {
+        font-size: .8em;
+    }
+
+    .myNav > ul > li > a {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        align-items:top;
+        padding:8px 10px;
+    }
+
+    h1 {
+        display:block;
+        width:95%;
+        font-size:1.2em;
+        min-width:200px;
+    }
+
+    .myNav li:not(.thin-nav) {
+        display:none;
+    }
+
+    .thin-nav {
+        display:block;
+        text-align:end;
+    }
+
+    .icon {
+        float:inline-end;
+        display:block;
+        padding-right:20px;
+        color:inherit;
+    }
+
+    .second-nav.responsive {
+        background-color:rgb(255, 255, 255);
+        width:100%;
+        display:flex;
+        position:fixed;
+        z-index:1;
+    }
+    
+    .hidden-nav {
+        padding-top:60px;
+        height:200px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    
+    .hidden-nav a {
+        display:flex;
+        color:rgb(255, 37, 37);
+        width:75%;
+        text-decoration:none;
+    }
+
+    .ex-pad {
+        padding-top: 103px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hidden-nav {
+        padding-top: 100px;
+    }
+    
+    .ex-pad {
+        padding-top: 138px;
+    }
+}
+
+/* Calendar Screen Changes */
+
+@media screen and (max-width: 750px) {
+
+    .popupCalendar {
+        left: 5%;
+        right: 5%;
+        top: 5%;
+        bottom: 5%;
+        z-index: 4;
+    }
+
+    .outer-exit {
+        top: 6%;
+        right: 6%;
+    }
+
+  }
+
+/* Button and Testimonial Screen Changes */
+
+@media screen and (max-width: 480px) {
+    .button1 {
+        font-size:2.5em;
+    }
+
+    .tm-vid {
+        padding-top: 40px;
+    }
+    
+    
+    .tm-block {
+        display: block;
+        margin: auto;
+        padding-left: 5px;
+    }
+}
+
+/* Customer Perks Text Screen Changes */
+
+@media only screen and (max-width: 720px) {
+    .text {
+        font-size:2.2em;
+    }
+}
+
+/* Testimonials and Customer Perks Phone Screen Changes */
 
 @media screen and (max-width: 1050px) {
     .fiftyPerc {
@@ -705,51 +708,7 @@ h3 {
     }
 }
 
-.divider {
-    width: 82%;
-    display: block;
-    margin: auto;
-    background-color:rgb(135, 135, 135);
-    height: 2px;
-    margin-top: 40px;
-    margin-bottom: -20px;
-}
-
-.divider2 {
-    width: 94%;
-    display: block;
-    margin: auto;
-    background-color:rgb(135, 135, 135);
-    height: 2px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#factoid {
-    width: 90%;
-    text-align: center;
-    padding: 10px 5%;
-    background-color: rgb(198, 222, 255);
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-#factoid > p {
-    color: rgb(39, 165, 7);
-}
-
-.black-box {
-    border: solid 2px black;
-    border-style: dashed;
-}
-
-.gold-box {
-    border: solid 2px gold;
-}
-
-.fa-bars {
-    color: white;
-}
+/* Schedule Screen Changes */
 
 @media screen and (max-width: 800px) {
     #class-sch {

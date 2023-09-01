@@ -30,3 +30,9 @@ function schedWidget() {
     let exitButton = document.getElementById('exit-button2');
     exitButton.classList.toggle('show');
 }
+function toSpanish() {
+    document.getElementById('home1').innerHTML = "You've been Spanished!";
+    let a = document.querySelectorAll('button1');
+    let b = a.map((element) => element.innerHTML = "haga clic aquí para una clase gratuita")        
+    return b;
+}
