@@ -144,6 +144,19 @@ h3 {
     color: white;
 }
 
+.langButton {
+    position:relative;
+    display: block;
+    margin-right: 0px;
+    margin-left: 85%;
+    background-color: rgb(211, 236, 252);
+    color: blue;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+}
+
 /* End of Decoration Section */
 
 /* Header Section */

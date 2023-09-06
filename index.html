@@ -26,16 +26,16 @@
         </script>
         <script src="index.js"></script>
     </head>
-    <body>
+    <body onload="indexToSpanish()">
         <header>
             <h1><a class="title" href="#home">Familia Salsera</a></h1>
             <nav class="myNav" id="myTopNav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="./html/schedule.html">Class Schedule</a></li>
-                    <li><a href="./html/testimonials.html">Testimonials</a></li>
-                    <li><a href="./html/customer_perks.html">Customer Perks</a></li>
-                    <li><a href="#about-us">About Us</a></li>
+                    <li><a class="homeNav" href="#home1">Home</a></li>
+                    <li><a class="schedNav" href="./html/schedule.html">Class Schedule</a></li>
+                    <li><a class="testNav" href="./html/testimonials.html">Testimonials</a></li>
+                    <li><a class="perkNav" href="./html/customer_perks.html">Customer Perks</a></li>
+                    <li><a class="aboutNav" href="#about-us">About Us</a></li>
                 </ul>
             </nav>
             <a href="javascript:void(0);" class="icon thin-nav" onclick="myFunction()">
@@ -44,11 +44,11 @@
         </header>
         <div class="second-nav" id="mySecondNav">
         <div class="hidden-nav ex-pad">
-            <a href="#home">Home</a>
-            <a href="./html/schedule.html">Class Schedule</a>
-            <a href="./html/testimonials.html">Testimonials</a>
-            <a href="./html/customer_perks.html">Customer Perks</a>
-            <a href="#about-us">About Us</a>
+            <a class="homeNav" href="#home1">Home</a>
+            <a class="schedNav" href="./html/schedule.html">Class Schedule</a>
+            <a class="testNav" href="./html/testimonials.html">Testimonials</a>
+            <a class="perkNav" href="./html/customer_perks.html">Customer Perks</a>
+            <a class="aboutNav" href="#about-us">About Us</a>
         </div>
         <div class="seven-five-percent"></div>
         <div></div>
@@ -70,9 +70,10 @@
             </div>
             <div class="divider"></div>
             <div id="six-week-program" class="frame-block medium-text top-padding2">
+                <button class="langButton" onclick="toSpanish()">En Español</button>
                 <h2 id="home1" class="no-pad">Familia Salsera 💃</h2>
-                <div class="fiftyPerc">
-                    <h2 class="large-text six-week-program">Become a Salsera Today!</h2>
+                <div id="textA" class="fiftyPerc">
+                    <h2 class="large-text six-week-program">Become a Salsa Dancer Today!</h2>
                     <p>We're looking for 20 people that are serious about learning to Dance Salsa at last!</p>
                     <p>We're your local Dance Studio that has transformed hundreds of people just like you and we're eager to serve those who are looking to make 2022 their best year yet.</p>
                     <p>Here's what <em>you'd</em> get with our Six Week Salsa Challenge:</p>
@@ -84,39 +85,39 @@
             <div class="divider"></div>
             <div class="frame-block medium-text">
                 <h2 id="the-perks" class="center large-text">The Perks</h2>
-                <div class="fiftyPerc">
+                <div id="textB" class="fiftyPerc">
                     <p>✅ 2 HIGH-ENERGY Salsa lessons per week</p>
                     <p>✅ Access to an exclusive Salsa portal: tips, tricks, and lesson reviews</p>
                     <p>✅ Gala Night Graduation where you can practice your new moves</p>
                 </div>
-                <div class="fiftyPerc">
+                <div id="textC" class="fiftyPerc">
                     <p>✅ 24/7 access to our exclusive VIP Salsa community</p>
                     <p>✅ Dance secrets that guarantee you become a HIT on the dance floor</p>
                     <p>And much more...</p>
                 </div>
                 <div class="fiftyPerc">
-                    <p>We need to give a fair warning because this isn't for anyone who's not ready to finally learn to Salsa... But... If you're ready to learn how to confidently step into the dance floor, <span>we want you</span>.</p>
+                    <p id="textD">We need to give a fair warning because this isn't for anyone who's not ready to finally learn to Salsa... But... If you're ready to learn how to confidently step into the dance floor, we want you.</p>
                 </div>
                 <div class="fiftyPerc">
-                    <p>If you're ready to feel that sense of unshakeable confidence that can only be earned, <span>we want you</span>. If you're ready for your friends to ask "Wow, where did you learn to Dance?!" <span>we want you</span>.</p>
+                    <p id="textE">If you're ready to feel that sense of unshakeable confidence that can only be earned, we want you. If you're ready for your friends to ask "Wow, where did you learn to Dance?!" we want you.</p>
                 </div>
                 <div class="center">
-                    <p>🚨If that sounds like you, click below now, and reserve your <span>FREE CLASS</span> below🚨</p>
+                    <p id="textF">🚨If that sounds like you, click below now, and reserve your FREE CLASS below🚨</p>
                 </div>
             </div>
             <div class="frame-block">
                 <button class="button1 tall-padding" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
             </div>
             <div id="factoid" class="large-text">
-                <p>Did you know: During times of stress, our stress hormone (cortisol) increases and our immune system suffers. Dance is a great form of exercise, and that's also what we're in this for.</p>
+                <p id="textG">Did you know: During times of stress, our stress hormone (cortisol) increases and our immune system suffers. Dance is a great form of exercise, and that's also what we're in this for.</p>
             </div>
             <div class="frame-block medium-text">
-                <p>Now if you're still reading this, you have two choices:</p>
+                <p id="textH">Now if you're still reading this, you have two choices:</p>
                 <div class="fiftyPerc black-box">
-                    <p>Choice 1: Pretend like you never saw this ad and go about your day as you sell yourself on why next week, next month, or even next year is a "better time" to finally learn this awesome skill.</p>
+                    <p id="textI">Choice 1: Pretend like you never saw this ad and go about your day as you sell yourself on why next week, next month, or even next year is a "better time" to finally learn this awesome skill.</p>
                 </div>
                 <div class="fiftyPerc gold-box">
-                    <p>Choice 2: Recognize that life is a dance as they say and well, why should you spend most of your time only watching instead of being a part of it?</p>
+                    <p id="textJ">Choice 2: Recognize that life is a dance as they say and well, why should you spend most of your time only watching instead of being a part of it?</p>
                 </div>
             </div>
             <div class="divider"></div>
@@ -148,13 +149,13 @@
                     <img class="location2" src="https://live.staticflickr.com/65535/52774932237_3c3f8d5600_b.jpg" width="1024" height="764" alt="man pointing at dance instruction building behind him"/><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                 </div>
                 <div class="contact-info">
-                <p class="contact bold">Location:</p>
+                <p id="textK" class="contact bold">Location:</p>
                 <a href="https://goo.gl/maps/MTFkBVKthE3sLUQa8" target="_blank">
                 <p class="contact">185 W. Arrow Hwy<br>Pomona CA, 91767</p>
                 </a>
                 </div>
                 <div class="contact-info">
-                <p class="contact bold">Phone Number:</p>
+                <p id="textL" class="contact bold">Phone Number:</p>
                 <a href="tel:9092797956">
                 <p class="contact">(909) 279-7956</p>
                 </a>

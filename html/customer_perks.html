@@ -9,16 +9,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../index.js"></script>
     </head>
-    <body>
+    <body onload="perksToSpanish()">
         <header>
             <h1><a class="title" href="../index.html">Familia Salsera</a></h1>
             <nav class="myNav" id="myTopNav">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./schedule.html">Class Schedule</a></li>
-                    <li><a href="./testimonials.html">Testimonials</a></li>
-                    <li><a href="#home">Customer Perks</a></li>
-                    <li><a href="#about-us">About Us</a></li>
+                    <li><a class="homeNav" href="../index.html">Home</a></li>
+                    <li><a class="schedNav" href="./schedule.html">Class Schedule</a></li>
+                    <li><a class="testNav" href="./testimonials.html">Testimonials</a></li>
+                    <li><a class="perkNav" href="#home">Customer Perks</a></li>
+                    <li><a class="aboutNav" href="#about-us">About Us</a></li>
                 </ul>
             </nav>
             <a href="javascript:void(0);" class="icon thin-nav" onclick="myFunction()">
@@ -27,11 +27,11 @@
         </header>
         <div class="second-nav" id="mySecondNav">
         <div class="hidden-nav">
-            <a href="../index.html">Home</a>
-            <a href="./schedule.html">Class Schedule</a>
-            <a href="./testimonials.html">Testimonials</a>
-            <a href="#home">Customer Perks</a> <!-- change this home id-->
-            <a href="#about-us">About Us</a>
+            <a class="homeNav" href="../index.html">Home</a>
+            <a class="schedNav" href="./schedule.html">Class Schedule</a>
+            <a class="testNav" href="./testimonials.html">Testimonials</a>
+            <a class="perkNav" href="#home">Customer Perks</a> <!-- change this home id-->
+            <a class="aboutNav" href="#about-us">About Us</a>
         </div>
         <div class="seven-five-percent"></div>
         <div></div>
@@ -47,7 +47,7 @@
             <div class="frame">
                     <div class="divider2"></div>
                     <div class="box">
-                        <p class="text fiftyPerc">Free FB Group with Steps/Tricks/Tips</p>
+                        <p id="textA" class="text fiftyPerc">Free FB Group with Steps/Tricks/Tips</p>
                         <div class="fiftyPerc">
                             <img class="media-center" src="../images/perkImage1.jpg" alt="facebook group home page"/><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                         </div>
@@ -57,16 +57,16 @@
                         <div class="fiftyPerc">
                             <img class="media-center" src="../images/perkImage2.jpg" alt="youtube video playlist of dancing tips"/>         
                         </div>
-                        <p class="text fiftyPerc">Free Online Portal</p>
+                        <p id="textB" class="text fiftyPerc">Free Online Portal</p>
                     </div>
                     <div class="divider2"></div>
                     <div class="box">
-                        <p class="text thirtyPerc">Come Be Part of Our...</p>
+                        <p id="textC" class="text thirtyPerc">Come Be Part of Our...</p>
                         <img class="wide-media seventyPerc" src="https://live.staticflickr.com/65535/52766966391_816b6bf1f4_h.jpg" width="1600" height="auto" alt="large group of 30+ salsa dancers cheering"/><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                     </div>
                     <div class="divider2"></div>
                     <div class="box">
-                        <p class="text thirtyPerc">Free Fitness Program!</p>
+                        <p id="textD" class="text thirtyPerc">Free Fitness Program!</p>
                         <div class="seventyPerc">
                             <div class="videoWrapper media-center">
                                 <iframe class="" width="560" height="315" loading="lazy"  src="https://www.youtube.com/embed/lp54040_R_c?showinfo=0&modestbranding=1" alt="fitness program demonstration" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -80,7 +80,7 @@
                                 <iframe class="" width="560" height="315" loading="lazy" scrolling="no" src="https://www.youtube.com/embed/WI_ijktObKg" alt="large group of partners dancing" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
-                        <p class="text thirtyPerc">Dancing Field Trips</p>
+                        <p id="textE" class="text thirtyPerc">Dancing Field Trips</p>
                     </div>
                     <div class="divider2"></div>
             </div>
@@ -94,13 +94,13 @@
                     <img class="location2" src="https://live.staticflickr.com/65535/52774932237_3c3f8d5600_b.jpg" width="1024" height="764" alt="man pointing at dance instruction building behind him"/><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                 </div>
                 <div class="contact-info">
-                <p class="contact bold">Location:</p>
+                <p id="textK" class="contact bold">Location:</p>
                 <a href="https://goo.gl/maps/MTFkBVKthE3sLUQa8" target="_blank">
                 <p class="contact">185 W. Arrow Hwy<br>Pomona CA, 91767</p>
                 </a>
                 </div>
                 <div class="contact-info">
-                <p class="contact bold">Phone Number:</p>
+                <p id="textL" class="contact bold">Phone Number:</p>
                 <a href="tel:9092797956">
                 <p class="contact">(909) 279-7956</p>
                 </a>

@@ -9,16 +9,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../index.js"></script>
     </head>
-    <body>
+    <body onload="scheduleToSpanish()">
         <header>
             <h1><a class="title" href="../index.html">Familia Salsera</a></h1>
             <nav class="myNav" id="myTopNav">
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="#home">Class Schedule</a></li>
-                    <li><a href="./testimonials.html">Testimonials</a></li>
-                    <li><a href="./customer_perks.html">Customer Perks</a></li>
-                    <li><a href="#about-us">About Us</a></li>
+                    <li><a class="homeNav" href="../index.html">Home</a></li>
+                    <li><a class="schedNav" href="#home">Class Schedule</a></li>
+                    <li><a class="testNav" href="./testimonials.html">Testimonials</a></li>
+                    <li><a class="perkNav" href="./customer_perks.html">Customer Perks</a></li>
+                    <li><a class="aboutNav" href="#about-us">About Us</a></li>
                 </ul>
             </nav>
             <a href="javascript:void(0);" class="icon thin-nav" onclick="myFunction()">
@@ -27,11 +27,11 @@
         </header>
         <div class="second-nav" id="mySecondNav">
         <div class="hidden-nav">
-            <a href="../index.html">Home</a>
-            <a href="#home">Class Schedule</a>
-            <a href="./testimonials.html">Testimonials</a>
-            <a href="./customer_perks.html">Customer Perks</a>
-            <a href="#about-us">About Us</a>
+            <a class="homeNav" href="../index.html">Home</a>
+            <a class="schedNav" href="#home">Class Schedule</a>
+            <a class="testNav" href="./testimonials.html">Testimonials</a>
+            <a class="perkNav" href="./customer_perks.html">Customer Perks</a>
+            <a class="aboutNav" href="#about-us">About Us</a>
         </div>
         <div class="seven-five-percent"></div>
         <div></div>
@@ -62,13 +62,13 @@
                     <img class="location2" src="https://live.staticflickr.com/65535/52774932237_3c3f8d5600_b.jpg" width="1024" height="764" alt="man pointing at dance instruction building behind him"/><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
                 </div>
                 <div class="contact-info">
-                <p class="contact bold">Location:</p>
+                <p id="textK" class="contact bold">Location:</p>
                 <a href="https://goo.gl/maps/MTFkBVKthE3sLUQa8" target="_blank">
                 <p class="contact">185 W. Arrow Hwy<br>Pomona CA, 91767</p>
                 </a>
                 </div>
                 <div class="contact-info">
-                <p class="contact bold">Phone Number:</p>
+                <p id="textL" class="contact bold">Phone Number:</p>
                 <a href="tel:9092797956">
                 <p class="contact">(909) 279-7956</p>
                 </a>
