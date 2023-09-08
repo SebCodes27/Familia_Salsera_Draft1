@@ -30,14 +30,45 @@ function schedWidget() {
     let exitButton = document.getElementById('exit-button2');
     exitButton.classList.toggle('show');
 }
-let change = 0;
+let change = -1;
 function toSpanish() {
-    sessionStorage.setItem('change', '1');
+    if (sessionStorage.getItem('change') == 1) {
+        sessionStorage.setItem('change', -1);
+    } else {
+        sessionStorage.setItem('change', 1);
+    }
     indexToSpanish();
+    location.reload();
+}
+function toSpanish1() {
+    if (sessionStorage.getItem('change') == 1) {
+        sessionStorage.setItem('change', -1);
+    } else {
+        sessionStorage.setItem('change', 1);
+    }
+    location.reload();
+}
+function toSpanish2() {
+    if (sessionStorage.getItem('change') == 1) {
+        sessionStorage.setItem('change', -1);
+    } else {
+        sessionStorage.setItem('change', 1);
+    }   
+    testimonialsToSpanish();
+    location.reload();
+}
+function toSpanish3() {
+    if (sessionStorage.getItem('change') == 1) {
+        sessionStorage.setItem('change', -1);
+    } else {
+        sessionStorage.setItem('change', 1);
+    }    
+    perksToSpanish();
+    location.reload();
 }
 function indexToSpanish() {
     let change = sessionStorage.getItem('change')
-    if (change !== '1') {
+    if (change != 1) {
         return;
     };
     allToSpanish();
@@ -154,4 +185,6 @@ function allToSpanish() {
     });
     let button2 = document.querySelector('.button3');
     button2.textContent = 'Programa Tu Primera Clase';
+    let button3 = document.getElementById('langButton');
+    button3.textContent = 'In English';
 }

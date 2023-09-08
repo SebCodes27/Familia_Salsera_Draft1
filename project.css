@@ -38,6 +38,10 @@ h2:not(.six-week-program, .no-pad) {
     padding-top: 70px;
 }
 
+.top-padding3 {
+    padding-top: 110px;
+}
+
 .tall-padding {
     padding:40px;
 }
@@ -145,10 +149,9 @@ h3 {
 }
 
 .langButton {
-    position:relative;
     display: block;
-    margin-right: 0px;
-    margin-left: 85%;
+    margin-right: -5%;
+    margin-left: auto;
     background-color: rgb(211, 236, 252);
     color: blue;
     font-size: 1.5em;
@@ -338,7 +341,6 @@ nav > ul > li > a:hover {
 #home {
     text-align:center;
     font-size:3.2em;
-    padding-top: 90px;
 }
 
 #home1 {
