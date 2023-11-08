@@ -231,7 +231,7 @@ nav > ul > li > a:hover {
 
 .tipsNav {
     transition: .5s;
-    text-shadow: -1px 1px 5px gold;
+    text-shadow: -1px 1px 10px gold;
 }
 
 .tipsNav:hover {
