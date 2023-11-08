@@ -9,12 +9,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="../index.js"></script>
     </head>
-    <body onload="testimonialsToSpanish()">
+    <body onload="tipsToSpanish()">
         <header>
             <h1><a class="title" href="../index.html">Familia Salsera</a></h1>
             <nav class="myNav" id="myTopNav">
                 <ul>
                     <li><a class="homeNav" href="../index.html">Home</a></li>
+                    <li><a class="tipsNav" href="#top">Salsa Secrets</a></li>
                     <li><a class="schedNav" href="./schedule.html">Class Schedule</a></li>
                     <li><a class="testNav" href="./testimonials.html">Testimonials</a></li>
                     <li><a class="perkNav" href="./customer_perks.html">Customer Perks</a></li>
@@ -28,6 +29,7 @@
         <div class="second-nav" id="mySecondNav">
         <div class="hidden-nav">
             <a class="homeNav" href="../index.html">Home</a>
+            <a class="tipsNav" href="#top">Salsa Secrets</a>
             <a class="schedNav" href="./schedule.html">Class Schedule</a>
             <a class="testNav" href="./testimonials.html">Testimonials</a>
             <a class="perkNav" href="./customer_perks.html">Customer Perks</a>
@@ -39,7 +41,7 @@
         <main>
             <div class="frame top-padding3">
                 <button id="langButton" class="langButton" onclick="toSpanish2()">En Español</button>
-                <h2 id="home" class="no-pad">3 Best-Kept Secrets - We asked the girls and they answered</h2>
+                <h2 id="home" class="no-pad">Best-Kept Secrets - We asked the girls and they answered</h2>
                 <div class="popupCalendar show" id="myPopup">
                     <iframe src="../images/loading.png" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="msgsndr-calendar"></iframe><br><script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
                 </div>
@@ -53,47 +55,60 @@
                         <p class="center">Having confidence on the dance floor is a must... but what is the other key ingredient?</p>
                     </div>
                     <div class="tm-vid seventyPerc tw-pad">
-                        <div class="tm-block">
-                            <iframe class="" width="560" height="315" loading="lazy" src="https://youtube.com/embed/UMWQMcVjb2s?showinfo=0&modestbranding=1&autoplay=1&mute=1" alt="interview with a man on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="video videoWrapper tm-vid">
+                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/FChRYBTVeBY?si=_xsRWKQLwFpWyGu1?showinfo=0&modestbranding=1&autoplay=1&mute=1" alt="interview with a man on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="divider2"></div>
                 <div class="side-by-side">
                     <div id="textB" class="thirtyPerc tw-pad">
-                        <h3>A Step You NEED to take</h3>
+                        <h3>Without This NOTHING Else Will Work - Building a Foundation</h3>
                         <p class="center">What gives the best salseros the edge on the dance floor? Take a look at the secret technique used by accomplished dancers and musicians alike.</p>
                     </div>
                     <div class="tm-vid seventyPerc tw-pad">
                         <div class="video videoWrapper tm-vid">
-                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/vJKK82EUrSE?showinfo=0&modestbranding=1" alt="interview with a woman on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/dz8WGuvxxEU?si=El-7rJz8CrkyaBeh?showinfo=0&modestbranding=1" alt="interview with a woman on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="divider2"></div>
                 <div class="side-by-side">
                     <div id="textC" class="thirtyPerc tw-pad">
-                        <h3>Beauty of SHARING in Dance</h3>
-                        <p class="center">There's something not many people focus on that can actually bring them more joy. </p>
+                        <h3>Not Enough Girls? No Problem</h3>
+                        <p class="center">Check out this dance element (that most people ignore) that can actually bring you more joy.</p>
                     </div>
                     <div class="tm-vid seventyPerc tw-pad">
                         <div class="video videoWrapper tm-vid">
-                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/dZsQkc7ec48?showinfo=0&modestbranding=1" alt="interview with a man on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/o4J61Ey3ZTI?si=ONpVwTt-4uhv2K-Q?showinfo=0&modestbranding=1" alt="interview with a man on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
                 <div class="divider2"></div>
-                <!-- <div class="side-by-side">
-                    <div class="thirtyPerc tw-pad">
-                        <h3 id="textD">And many more!</h3>
+                <div class="side-by-side">
+                    <div id="textD" class="thirtyPerc tw-pad">
+                        <h3>He Actually Said WHAT?? - Avoid Embarrassment</h3>
+                        <p class="center">When we're rejected for a dance, is it the end of a good night? See what can help you to bounce back and get back on that dance floor.</p>
                     </div>
                     <div class="tm-vid seventyPerc tw-pad">
                         <div class="video videoWrapper tm-vid">
-                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/Rb8cbFRG1fQ?showinfo=0&modestbranding=1" alt="interview with multiple people on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/pbdJmSW1_Oo?si=LOR5KStJ2n4TreJd?si=_nCYU7UM_tpWX0o8?showinfo=0&modestbranding=1" alt="interview with a man on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-                <div class="divider2"></div> -->
+                <div class="divider2"></div>
+                <div class="side-by-side">
+                    <div id="textE" class="thirtyPerc tw-pad">
+                        <h3>How to Not BREAK Your Partner.....</h3>
+                        <p class="center">Dances are the most fun when both you and your partner are having a great time. What important quality should you show?</p>
+                    </div>
+                    <div class="tm-vid seventyPerc tw-pad">
+                        <div class="video videoWrapper tm-vid">
+                            <iframe class="vid-perks" width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/q-Eld0FhdOI?si=A7zW1E3aoA0kbptP?si=ui2-gw7kYFitnrXC?showinfo=0&modestbranding=1" alt="interview with a man on salsa class progress" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider2"></div>
             </div>
             <div class="frame top-padding">
                 <button class="button1 tall-padding" type="button" onclick="calWidget()">Click Here For a Free Class!</button>
