@@ -229,6 +229,17 @@ nav > ul > li > a:hover {
     display:none;
 }
 
+.tipsNav {
+    transition: .5s;
+    text-shadow: -1px 1px 5px gold;
+}
+
+.tipsNav:hover {
+    transition: .5s;
+    color: rgb(253, 230, 101);
+    text-shadow: unset;
+}
+
 /* End of Header Section */
 
 /* Popup Calendar and Schedule Section */

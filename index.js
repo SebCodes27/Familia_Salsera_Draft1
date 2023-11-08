@@ -197,6 +197,10 @@ function allToSpanish() {
     e.forEach(el => {
         el.textContent = 'Sobre Nosotros'
     });
+    let f = document.querySelectorAll('.tipsNav');
+    f.forEach(el => {
+        el.textContent = 'Secretos de la Salsa'
+    });
     let aboutUs = document.getElementById('about-us');
     aboutUs.textContent = 'Sobre Nosotros';
     let K = document.getElementById('textK');
