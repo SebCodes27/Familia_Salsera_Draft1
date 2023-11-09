@@ -152,6 +152,30 @@ function perksToSpanish() {
     let E = document.getElementById('textE');
     E.innerText = 'Excursiones de Baile';
 }
+function tipsToSpanish() {
+    let change = sessionStorage.getItem('change')
+    if (change !== '1') {
+        return;
+    };
+    allToSpanish();
+    let home = document.getElementById('home');
+    home.textContent = 'Los secretos mejor guardados: les preguntamos a las chicas y respondieron';
+    let A = document.getElementById('textA');
+    A.children[0].textContent = 'EVITE este error - venga preparado';
+    A.children[1].textContent = 'Tener confianza en la pista de baile es imprescindible... pero ¿cuál es el otro ingrediente clave?';
+    let B = document.getElementById('textB');
+    B.children[0].textContent = 'Sin esto, NADA más funcionará - Construyendo una base';
+    B.children[1].textContent = '¿Qué les da a los mejores salseros la ventaja en la pista de baile? Eche un vistazo a la técnica secreta utilizada tanto por bailarines como por músicos consumados.';
+    let C = document.getElementById('textC');
+    C.children[0].textContent = '¿No hay suficientes chicas? Ningún problema';
+    C.children[1].textContent = 'Echa un vistazo a este elemento de baile (que la mayoría de la gente ignora) que en realidad puede brindarte más alegría.';
+    let D = document.getElementById('textD');
+    D.children[0].textContent = '¿En realidad dijo QUÉ? - Evite la vergüenza';
+    D.children[1].textContent = 'Cuando nos rechazan para un baile, ¿es el final de una buena noche? Vea qué puede ayudarle a recuperarse y volver a la pista de baile.';
+    let E = document.getElementById('textE');
+    E.children[0].textContent = 'Cómo NO ROMPER a tu pareja.....';
+    E.children[1].textContent = 'Los bailes son de lo más divertido cuando tanto tú como tu pareja os lo pasáis genial. ¿Qué cualidad importante deberías mostrar?';
+}
 function allToSpanish() {
     let a = document.querySelectorAll('.homeNav');
     a.forEach(el => {
@@ -172,6 +196,10 @@ function allToSpanish() {
     let e = document.querySelectorAll('.aboutNav');
     e.forEach(el => {
         el.textContent = 'Sobre Nosotros'
+    });
+    let f = document.querySelectorAll('.tipsNav');
+    f.forEach(el => {
+        el.textContent = 'Secretos de la Salsa'
     });
     let aboutUs = document.getElementById('about-us');
     aboutUs.textContent = 'Sobre Nosotros';
