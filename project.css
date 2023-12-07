@@ -618,7 +618,7 @@ nav > ul > li > a:hover {
     }
     
     .hidden-nav {
-        padding-top:60px;
+        padding-top:100px;
         height:200px;
         display:flex;
         flex-wrap:wrap;

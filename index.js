@@ -75,7 +75,7 @@ function indexToSpanish() {
     let A = document.getElementById('textA');
     A.children[0].textContent = 'Conviértete en un bailarín de salsa hoy!';
     A.children[1].textContent = '¡Estamos buscando 20 personas que realmente quieran aprender a bailar Salsa por fin!';
-    A.children[2].textContent = 'Somos su estudio de danza local que ha transformado a cientos de personas como usted y estamos ansiosos por servir a aquellos que buscan hacer del 2022 su mejor año hasta el momento.';
+    A.children[2].textContent = 'Somos su estudio de danza local que ha transformado a cientos de personas como usted y estamos ansiosos por servir a aquellos que buscan hacer del 2023 su mejor año hasta el momento.';
     A.children[3].textContent = 'Esto es lo que obtendrías con nuestro Reto de Salsa de Seis Semanas:';
     let perks = document.getElementById('the-perks');
     perks.textContent = 'Las Ventajas';
