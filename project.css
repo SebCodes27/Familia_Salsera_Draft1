@@ -94,7 +94,7 @@ iframe {
     height:0;
 }
   
-.videoWrapper iframe {
+.videoWrapper video, .videoWrapper iframe {
     position:absolute;
     top:0;
     inset-block-start:0;

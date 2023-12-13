@@ -62,9 +62,15 @@
                 </div>
                 <div class="calFade show" id="calFade"></div>
                 <div id="intro-vid" class="tw-s-pad">
-                    <div class="ex-video videoWrapper">
+                        <video id="sessions-vid" controls loop autoplay muted>
+                            <source src="./videos/sessions.mp4" type="video/mp4">
+                            <source src="./videos/sessions.webm" type="video/webm">
+                            <track label="English" kind="subtitles" srclang="en" src="./videos/sessions.vtt" default>
+                        </video>
+                <!-- <div class="ex-video videoWrapper">
                         <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/1aLediRjKFI?showinfo=0&modestbranding=1&autoplay=1&mute=1&loop=1" alt="dancing with a partner demonstration" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                -->
                 </div>
             </div>
             <div class="frame-block top-padding">
@@ -73,7 +79,7 @@
             <div class="divider"></div>
             <div id="six-week-program" class="frame-block medium-text top-padding2">
                 <button id="langButton" class="langButton" onclick="toSpanish()">En Español</button>
-                <h2 id="home1" class="no-pad">Familia Salsera 💃</h2>
+                <h2 id="home1" class="no-pad">Familia Salsera</h2>
                 <div id="textA" class="fiftyPerc">
                     <h2 class="large-text six-week-program">Become a Salsa Dancer Today!</h2>
                     <p>We're looking for 20 people that are serious about learning to Dance Salsa at last!</p>
